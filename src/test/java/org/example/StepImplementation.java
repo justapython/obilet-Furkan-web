@@ -221,7 +221,7 @@ public class StepImplementation {
         WebDriverWait wait = new WebDriverWait(Driver.webDriver, Duration.ofSeconds(10));
 
         WebElement input = wait.until(ExpectedConditions.elementToBeClickable(locator));
-        input.clear();
+        clickElement(key);
         input.sendKeys(text);
 
         // Dropdown'un dolması beklenirken statik bekleme kullanıldı
@@ -231,6 +231,7 @@ public class StepImplementation {
             Thread.currentThread().interrupt();
         }
 
+        input.sendKeys(Keys.ENTER);
         input.sendKeys(Keys.ENTER);
     }
 
