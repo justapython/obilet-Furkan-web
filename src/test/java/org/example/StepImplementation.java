@@ -163,7 +163,7 @@ public class StepImplementation {
         System.out.println("Ilk sayfadaki fiyat: " + fiyatIlkSayfa);
 
         clickElement("SeferlerPageOnaylaVeDevamButton");
-        waitUntilElementClickable("OdemePageOdemeYapButton", 10);
+        waitUntilElementClickable("OdemePageOdemeYapButton", 25);
 
         // Onlayla ve devam butonunundan sonra gelen odeme sayfasında firma adı ve fiyat bilgileri alındı
         String firmaAdiIkinciSayfa = Driver.webDriver.findElement(
