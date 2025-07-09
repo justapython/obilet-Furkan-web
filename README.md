@@ -1,33 +1,51 @@
-## About this template
+# Obilet Web Automation Project
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
+## Table of Contents
 
-## Installing this template
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Contact](#contact)
 
-    gauge --install java_maven_selenium
+---
 
-## Building on top of this template
+### About the Project
 
-### Defining Specifications
+Bu proje, Selenium4 kullanılarak Obilet web sitesi üzerinde otomasyon testleri gerçekleştirmek amacıyla geliştirilmiştir. Proje kapsamında aşağıdaki işlevler test edilmektedir:
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
+- **Dinamik Tarih Seçimi:** Günlerin dinamik olarak değiştirilebildiği ve sistemin bu değişikliklere doğru şekilde tepki verdiği kontrol edilir.
+- **Koltuk Seçimi:** Boş koltuklardan yalnızca uygun olanların rastgele seçilmesi sağlanır.
+- **Ödeme Adımı Doğrulaması:** Ödeme adımına gelindiğinde, önceki adımlardaki fiyat ve otobüs firması isimlerinin tutarlılığı kontrol edilir.
+- **Otel Listeleme:** Dinamik olarak şehir ve tarih değişiklikleri yapılabilir ve fiyatların küçükten büyüğe doğru sıralanıp sıralanmadığı fonksiyonel olarak test edilir.
+- **Loglama ve Debug:** Otomasyon sürecinde gerekli loglamalar ve debug işlemleri gerçekleştirilerek sorunların kolayca tespit edilmesi sağlanır.
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
+Proje, kullanıcı dostu bir deneyim sunarken, sistemin kararlılığını ve doğruluğunu da garanti altına almayı hedeflemektedir.
 
-### Writing the implementations
+---
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+### Technologies Used
 
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
+- **Selenium4:** Web otomasyon testleri için kullanılan temel araç.
+- **Maven:** Proje yönetimi ve bağımlılıkların yönetimi için.
+- **Gauge:** Test senaryolarının kolayca yazılabilmesi ve yönetilebilmesi için.
+- **Java:** Programlama dili olarak kullanılmıştır.
+- **AssertJ:** Test doğrulamaları için kullanılan kütüphane.
+- **Bonigarcia WebDriverManager /w Selenium4:** WebDriver'ların otomatik yönetimi için.
+- **Json Formater - Gson:** JSON verilerinin işlenmesi ve formatlanması için.
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
+---
 
-### Execution
+### Features
 
-* You can execute the specification as:
+- **Dinamik Bekleme Süreleri:** Web elementlerinin yüklenmesi için akıllı bekleme stratejileri kullanılır.
+- **JSON'dan Element Okunabilirliği:** Test verileri ve element locator'ları JSON dosyalarından okunabilir, yönetilebilir hale getirilmiştir.
+- **Spec Dosyası Üzerinden Kolay Değişken Atamaları:** Test senaryoları, spec dosyaları üzerinden kolayca özelleştirilebilir.
+- **Page Object Model ile Okunabilir Tasarım:** Kod okunabilirliği ve sürdürülebilirlik için Page Object Model (POM) tasarım deseni kullanılmıştır.
+- **Otobüs Bileti Doğrulaması:** Otobüs bileti alım sürecinde, fiyat ve firma bilgilerinin tutarlılığı otomatik olarak kontrol edilir.
+- **Otel Fiyat Kontrolü:** Otel listeleme sayfalarında, fiyatların küçükten büyüğe doğru sıralanıp sıralanmadığı fonksiyonel olarak test edilir.
 
-```
-mvn test
-```
+---
+
+### Contact
+
+- **Mail:** [furkanbicer803@gmail.com](mailto:furkanbicer803@gmail.com)
