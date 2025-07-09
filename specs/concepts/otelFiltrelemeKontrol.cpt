@@ -1,0 +1,31 @@
+Created by furkan.bicer on 9.07.2025
+
+This is a concept file with following syntax for each concept.
+# Obilet otel arama sayfasına gidilir
+* URL adresine gidilir "https://www.obilet.com/otel"
+
+# Otel konaklamasının yapılacağı il <key> olarak seçilir
+* "HomePageNeredenTextBox" arama kutusuna <key> yazılır ve seçim yapılır
+
+# Otel için giriş tarihi bugünden <key> gün sonra çıkış tarihi <key2> gün sonra olarak belirlenir
+* "OtelHomePageGirisTarihiBox" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "OtelHomePageGirisTarihiBox" elementine tıklanır
+* Bugünden <key> gün sonrası giriş tarihi <key2> gün sonrası çıkış tarihi olarak seçilir
+
+# Otel arama işlemi gerçekleştirilir
+* "HomePageOtobusAraButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "HomePageOtobusAraButton" elementine tıklanır
+* "OtelListPageOdaSecButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+
+# Yarım pansiyon filtrelemesi gerçekleştirilir
+* "OtelListPageYarimPansiyonLinkText" elementine scroll edilir
+* "OtelListPageYarimPansiyonLinkText" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "OtelListPageYarimPansiyonLinkText" elementine tıklanır
+* "OtelListPageOdaSecButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "OtelListPageSıralaButton" elementine scroll edilir
+* "OtelListPageSıralaButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "OtelListPageSeciliFiltreText" elementinin text değeri "Yarım Pansiyon" değerini içeriyor mu kontrol et
+* "OtelListPageSıralaButton" elementine tıklanır
+* "OtelListPageDüsükYüksekButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "OtelListPageDüsükYüksekButton" elementine tıklanır
+

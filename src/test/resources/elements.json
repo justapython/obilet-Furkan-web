@@ -1,0 +1,66 @@
+{
+  "HomePageNeredenTextBox": {
+    "locatorType": "id",
+    "value": "origin-input"
+  },
+  "HomePageNereyeTextBox": {
+    "locatorType": "id",
+    "value": "destination-input"
+  },
+  "HomePageGidisTarihiBox": {
+    "locatorType": "xpath",
+    "value": "//span[@class='day']"
+  },
+  "HomePageNeredenSelectionBox": {
+    "locatorType": "xpath",
+    "value": "//*[@id='origin']/select"
+  },
+  "HomePageNereyeSelectionBox": {
+    "locatorType": "xpath",
+    "value": "//*[@id='destination']/select"
+  },
+  "HomePageOtobusAraButton": {
+    "locatorType": "id",
+    "value": "search-button"
+  },
+  "SeferlerPageKoltukSecButton": {
+    "locatorType": "xpath",
+    "value": "(//button[@class='open'][text()='Koltuk Seç'])[1]"
+  },
+  "SeferlerPageOnaylaVeDevamButton": {
+    "locatorType": "xpath",
+    "value": "//span[text()='Onayla ve Devam Et']"
+  },
+  "SeferlerPageGenderMaleButton": {
+    "locatorType": "xpath",
+    "value": "//button[@class='male ']"
+  },
+  "OdemePageOdemeYapButton": {
+    "locatorType": "id",
+    "value": "pay"
+  },
+  "OtelHomePageGirisTarihiBox": {
+    "locatorType": "id",
+    "value": "checkInDate"
+  },
+  "OtelListPageOdaSecButton": {
+    "locatorType": "xpath",
+    "value": "(//button[text()='Oda Seç'])[1]"
+  },
+  "OtelListPageYarimPansiyonLinkText": {
+    "locatorType": "xpath",
+    "value": "//span[text()='Yarım Pansiyon ']"
+  },
+  "OtelListPageSıralaButton": {
+    "locatorType": "id",
+    "value": "filterSortingDropdown"
+  },
+  "OtelListPageSeciliFiltreText": {
+    "locatorType": "xpath",
+    "value": "(//span[@class='filter-item__name'])[1]"
+  },
+  "OtelListPageDüsükYüksekButton": {
+    "locatorType": "xpath",
+    "value": "//button[text()=' Fiyat (Düşükten yükseğe) ']"
+  }
+}

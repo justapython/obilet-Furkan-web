@@ -1,0 +1,30 @@
+Created by furkan.bicer on 8.07.2025
+
+This is a concept file with following syntax for each concept.
+
+# Obilet otobüs araması sayfasına gidilir
+*  URL adresine gidilir "https://www.obilet.com/"
+
+# Otobüs kalkış yeri olarak <key> secilir
+* "HomePageNeredenTextBox" arama kutusuna <key> yazılır ve seçim yapılır
+
+# Otobüs varış yeri olarak <key> seçilir
+* "HomePageNereyeTextBox" arama kutusuna <key> yazılır ve seçim yapılır
+
+# Gidiş için tarih seçimi bugünden <key> gün sonra için dinamik şekilde yapılır
+* "HomePageGidisTarihiBox" elementinin tıklanabilir olduğu kontrol edilir "10"
+* "HomePageGidisTarihiBox" elementine tıklanır
+* Bugünden <key> gün sonrasındaki tarihe tıklanır
+
+# Otobüs seferi arama işlemi gerçekleştirilir
+* "HomePageOtobusAraButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* Random cıkabilecek olan banner bypass edilir
+* "HomePageOtobusAraButton" elementine tıklanır
+* "SeferlerPageKoltukSecButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* Random cıkabilecek olan banner bypass edilir
+* "SeferlerPageKoltukSecButton" elementine tıklanır
+* "SeferlerPageOnaylaVeDevamButton" elementinin tıklanabilir olduğu kontrol edilir "10"
+* Random cıkabilecek olan banner bypass edilir
+
+# Uygun olan boş koltuklardan rastgele bir seçim ile erkek yolcu secilir ve kontroller gerceklestirilir
+* Uygun koltuklardan rastgele bir tanesi seçilir ve tıklanır
